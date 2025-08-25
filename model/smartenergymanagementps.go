@@ -60,7 +60,9 @@ type SmartEnergyManagementPsPowerTimeSlotValueListElementsType struct {
 
 type SmartEnergyManagementPsDataType struct {
 	NodeScheduleInformation *PowerSequenceNodeScheduleInformationDataType `json:"nodeScheduleInformation,omitempty"` // ignoring changes
-	Alternatives            [][]SmartEnergyManagementPsAlternativesType   `json:"alternatives,omitempty"`
+	Alternatives            [][]struct {
+		PowerSequence [][]SmartEnergyManagementPsPowerSequenceType `json:"powerSequence,omitempty"`
+	} `json:"alternatives,omitempty"`
 }
 
 type SmartEnergyManagementPsDataElementsType struct {
