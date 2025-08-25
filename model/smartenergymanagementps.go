@@ -6,7 +6,7 @@ type SmartEnergyManagementPsAlternativesRelationElementsType PowerSequenceAltern
 
 type SmartEnergyManagementPsAlternativesType struct {
 	Relation      *SmartEnergyManagementPsAlternativesRelationType `json:"relation,omitempty"`
-	PowerSequence []SmartEnergyManagementPsPowerSequenceType       `json:"powerSequence,omitempty"`
+	PowerSequence [][]SmartEnergyManagementPsPowerSequenceType     `json:"powerSequence,omitempty"`
 }
 
 type SmartEnergyManagementPsAlternativesElementsType struct {
