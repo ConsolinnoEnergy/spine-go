@@ -15,9 +15,9 @@ type SmartEnergyManagementPsAlternativesElementsType struct {
 }
 
 type SmartEnergyManagementPsPowerSequenceType struct {
-	Description                           *PowerSequenceDescriptionDataType              `json:"description,omitempty"`                           // ignoring changes
+	Description                           []PowerSequenceDescriptionDataType             `json:"description,omitempty"`                           // ignoring changes
 	State                                 *PowerSequenceStateDataType                    `json:"state,omitempty"`                                 // ignoring changes
-	Schedule                              *PowerSequenceScheduleDataType                 `json:"schedule,omitempty"`                              // ignoring changes
+	Schedule                              []PowerSequenceScheduleDataType                `json:"schedule,omitempty"`                              // ignoring changes
 	ScheduleConstraints                   *PowerSequenceScheduleConstraintsDataType      `json:"scheduleConstraints,omitempty"`                   // ignoring changes
 	SchedulePreference                    *PowerSequenceSchedulePreferenceDataType       `json:"schedulePreference,omitempty"`                    // ignoring changes
 	OperatingConstraintsInterrupt         *OperatingConstraintsInterruptDataType         `json:"operatingConstraintsInterrupt,omitempty"`         // ignoring changes
